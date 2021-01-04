@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/MainMenuFragment">
+
+    <fragment
+        android:id="@+id/MainMenuFragment"
+        android:name="com.example.courseviewer.view.fragment.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+
+        <action
+            android:id="@+id/action_MainMenuFragment_to_MainStudentsFragment"
+            app:destination="@id/MainStudentsFragment" />
+        <action
+            android:id="@+id/action_MainMenuFragment_to_MainSubjectsFragment"
+            app:destination="@id/MainSubjectsFragment" />
+        <action
+            android:id="@+id/action_MainMenuFragment_to_RaportFragment"
+            app:destination="@id/RaportFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MainStudentsFragment"
+        android:name="com.example.courseviewer.view.fragment.MainStudentsFragment"
+        android:label="fragment_main_students"
+        tools:layout="@layout/fragment_main_students" >
+
+        <action
+            android:id="@+id/action_MainStudentsFragment_to_AddEditStudentFragment"
+            app:destination="@id/AddEditStudentFragment" />
+
+        <action
+            android:id="@+id/action_MainStudentsFragment_to_AllGradesFragment"
+            app:destination="@id/AllGradesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddEditStudentFragment"
+        android:name="com.example.courseviewer.view.fragment.AddEditStudentFragment"
+        android:label="fragment_add_edit_student"
+        tools:layout="@layout/fragment_add_edit_student" />
+
+    <fragment
+        android:id="@+id/AllGradesFragment"
+        android:name="com.example.courseviewer.view.fragment.AllGradesFragment"
+        android:label="fragment_all_grades"
+        tools:layout="@layout/fragment_all_grades" />
+
+    <fragment
+        android:id="@+id/MainSubjectsFragment"
+        android:name="com.example.courseviewer.view.fragment.MainSubjectsFragment"
+        android:label="fragment_main_subjects"
+        tools:layout="@layout/fragment_main_subjects" >
+
+        <action
+            android:id="@+id/action_MainSubjectsFragment_to_StudentsInSubjectFragment"
+            app:destination="@id/StudentsInSubjectFragment" />
+
+        <action
+            android:id="@+id/action_MainSubjectsFragment_to_AddEditSubjectFragment"
+            app:destination="@id/AddEditSubjectFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddEditSubjectFragment"
+        android:name="com.example.courseviewer.view.fragment.AddEditSubjectFragment"
+        android:label="fragment_add_edit_subject"
+        tools:layout="@layout/fragment_add_edit_subject" />
+
+    <fragment
+        android:id="@+id/StudentsInSubjectFragment"
+        android:name="com.example.courseviewer.view.fragment.StudentsInSubjectFragment"
+        android:label="fragment_students_in_subject"
+        tools:layout="@layout/fragment_students_in_subject" >
+
+        <action
+            android:id="@+id/action_StudentsInSubjectFragment_to_AddStudentsToSubjectFragment"
+            app:destination="@id/AddStudentsToSubjectFragment" />
+
+        <action
+            android:id="@+id/action_StudentsInSubjectFragment_to_GradesFragment"
+            app:destination="@id/GradesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddStudentsToSubjectFragment"
+        android:name="com.example.courseviewer.view.fragment.AddStudentsToSubjectFragment"
+        android:label="fragment_add_students_to_subject"
+        tools:layout="@layout/fragment_add_students_to_subject" />
+
+    <fragment
+        android:id="@+id/GradesFragment"
+        android:name="com.example.courseviewer.view.fragment.GradesFragment"
+        android:label="fragment_grades"
+        tools:layout="@layout/fragment_grades" >
+
+        <action
+            android:id="@+id/action_GradesFragment_to_AddEditGradeFragment"
+            app:destination="@+id/AddEditGradeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddEditGradeFragment"
+        android:name="com.example.courseviewer.view.fragment.AddEditGradeFragment"
+        android:label="fragment_add_edit_grade"
+        tools:layout="@layout/fragment_add_edit_grade" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/RaportFragment"
+        android:name="com.example.courseviewer.view.fragment.RaportFragment"
+        android:label="fragment_raport"
+        tools:layout="@layout/fragment_raport" >
+    </fragment>
+</navigation>

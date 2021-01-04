@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/StartPageFragment">
+
+    <fragment
+        android:id="@+id/StartPageFragment"
+        android:name="com.example.shoppingcalc.view.fragment.StartPageFragment"
+        android:label="fragment_start_page"
+        tools:layout="@layout/fragment_start_page" >
+
+        <action
+            android:id="@+id/action_StartPageFragment_to_ViewProductsFragment"
+            app:destination="@id/ViewProductsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ViewProductsFragment"
+        android:name="com.example.shoppingcalc.view.fragment.ViewProductsFragment"
+        android:label="fragment_view_products"
+        tools:layout="@layout/fragment_view_products" />
+
+</navigation>
